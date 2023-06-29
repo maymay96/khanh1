@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <h2>Email Login</h2>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="email">Email:</label><br/>
+                <input type="email" id="email" name= "email" required><br/>
+            </div>
+
+            <div class="form-group">  
+                <label for="password">Password:</label><br/> 
+                <!-- Add your own password requirements or guidelines here -->
+                <!-- Example: Password must be at least 8 characters long -->
+                <input type="password" id="password" name="password"><br/>
+            </div>
+
+            <!-- Remember Me Checkbox -->
+          	<div class="remember-me-container">
+            	<input type="checkbox" id="rememberMeCheckbox"/>
+            	<label for="rememberMeCheckbox">Remember me</label>	
+        	</div>   
+
+          	<button type="submit">Login</button> 
+
+          	<!-- Forgot Password Link -->
+            <p class="forgot-password-link"><a href="#">Forgot password?</a></p>  
+
+        </form>
+
+    </div>
+</body>
+</html>
