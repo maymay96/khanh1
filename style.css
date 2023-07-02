@@ -1,76 +1,141 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container {
-    width: 400px;
+.container{
+    width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.3);
 }
-
-.logo-container {
+header {
+    height: 50px;
+}
+.freemysql {
+    background-color: #5c5c5c;
+    position: relative;
+    height: 67px;
+    padding: 15px 0 0 20px;
+}
+.disco {
+    width: 150px;
+    position: absolute;
+    right: 10px; 
+    bottom: -45px;
+}
+.disco img {
+    width: 100%;
+}
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 20px;
+}
+h2 {
+    color: blue;
     text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.listCard {
+    position: relative;
+}
+.register {
+    text-align: center;
+    width: 67%;
+    background-color: #f2f2f2;
+}
+.register h3 {
+    margin: 10px 0 20px;
+}
+.register h5 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
+.register button {
+    padding: 10px 20px;
+}
+.included {
+    position: absolute;
+    width: 31%;
+    height: 173px;
+    background-color: #f2f2f2;
+    right: 0;
+    bottom: 0;
 
-.logo-container i {
-    font-size: 32px;
-    color: #333333;
-    margin-bottom: 10px;
+}
+.included ul {
+    padding-left: 25px;
+    margin-top: 30px;
+}
+.listCard1 {
+    margin-top: 15px;
+    position: relative;
+}
+.database {
+    padding: 14px;
+    width: 32%;
+    background-color: #f2f2f2;
+}
+.database h3 {
+    font-size: 17px;
+}
+.database p {
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.secure {
+    position: relative;
+    padding: 14px;
+    width: 330px;
+    height: 173px;
+    display: inline-block;
+    top: -173px;
+    left: 340px;
+    background-color: #f2f2f2;
+}
+.secure h3 {
+    font-size: 17px;
+}
+.secure p {
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.free {
+    position: relative;
+    padding: 14px;
+    width: 310px;
+    height: 173px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    left: 357px;
+    top: -173px;
+}
+.free h3 {
+    font-size: 17px;
 }
 
-.logo-container h2 {
-    font-size: 24px;
-    color: #333333;
-    margin: 0;
+.free p {
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 20px ;
 }
-
-.form-group {
-    margin-bottom: 15px; 
-} 
-
-label {
-    display: block; 
-    margin-bottom: 6px;  	
-    color: #555555;
-    font-size: 14px;
-}  
-
-input[type="email"],
-input[type="password"]{
-    width: 100%;   
-    padding: 12px 10px;    
-    border-radius: 4px;    
-    border: none ;
-    background-color: #f5f5f5 ;
-    box-shadow: none;
-
-    transition: border .3s ease-in-out, box-shadow .3s ease-in-out ;
+footer {
+    position: relative;
+    background-color: #5c5c5c;
+    position: relative;
+    height: 67px;
+    padding: 15px 0 0 20px;
 }
-
-input[type="email"]:focus,
-input[type="password"]:focus{
-    border: solid thin #007bff;
-    box-shadow: rgba(38,143,255,.1) 0 .375rem .75rem !important;
-
-    outline: none;  
-}
-
-.remember-me-container{
-    display: flex;
-    align-items: center;
-    margin-top: -10px;
-    margin-bottom: 15px;
-
-    font-size: .9em;
-    color: #777777;
-} 
-
-.forgot-password-link a{
-    font-size: .9em;
-    text-align: right !important;
-    color: #007bff;
+footer p {
+    width: 1000px;
+    font-size: 15px;
+    text-align: right;
+    margin-left: -10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #5c5c5c;
+    color: white;
+    height: 30px;
 }
