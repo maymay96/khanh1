@@ -1,141 +1,118 @@
-*{
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: aliceblue;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    padding: 20px 0;
+    background-color: cadetblue;
+    display: flex;
+}
+.p{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.img-container img{
+    background-color: aliceblue;
+    padding: 4px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.title-container{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-container h1, .title .img-container h2{
+    color: aliceblue;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.title-container h2{
+    font-size: 18px;
+    color:cadetblue;
+    margin-top: 10px;
+}
+.img .avatar{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
 }
 .container{
-    width: 1000px;
-    margin: 0 auto;
+    padding: 20px;
+    background-color: bisque;
+    display: flex;
 }
-header {
-    height: 50px;
-}
-.freemysql {
-    background-color: #5c5c5c;
-    position: relative;
-    height: 67px;
-    padding: 15px 0 0 20px;
-}
-.disco {
-    width: 150px;
-    position: absolute;
-    right: 10px; 
-    bottom: -45px;
-}
-.disco img {
+.sider, .content{
+    background-color: aliceblue;
+    padding: 20px;
     width: 100%;
 }
-header ul li {
+.sider{
+    width: calc(40% - 20px);
+    margin-right: 20px;
+}
+.content{
+    flex-grow: 1;
+}
+.tag-fill{
+    background-color: aquamarine;
+    padding: 8px 20px;
+    color: aliceblue;
+    font-size: 18px;
     display: inline-block;
-    margin: 0 10px;
-    padding-top: 20px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
-h2 {
-    color: blue;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
+.tag-content{
+    padding-left: 20px;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
-.listCard {
-    position: relative;
+.tag-content ul{
+    margin: 0;
+    padding: 0;
 }
-.register {
-    text-align: center;
-    width: 67%;
-    background-color: #f2f2f2;
+.tag-content ul li{
+    list-style-type: none;
+    padding: 8px 0;
 }
-.register h3 {
-    margin: 10px 0 20px;
+.progress-container{
+    width: 80%;
 }
-.register h5 {
-    font-size: 30px;
-    margin-bottom: 20px;
+.progress-title{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
 }
-.register button {
+.progress-wrap{
+    width: 100%;
+    height: 10px;
+    background-color: aliceblue;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.progress{
+    width: 50%;
+    height: 10px;
+    background-color: aqua;
+}
+.tag{
+    font-size: 18px;
+    color: #212121;
     padding: 10px 20px;
-}
-.included {
-    position: absolute;
-    width: 31%;
-    height: 173px;
-    background-color: #f2f2f2;
-    right: 0;
-    bottom: 0;
-
-}
-.included ul {
-    padding-left: 25px;
-    margin-top: 30px;
-}
-.listCard1 {
-    margin-top: 15px;
-    position: relative;
-}
-.database {
-    padding: 14px;
-    width: 32%;
-    background-color: #f2f2f2;
-}
-.database h3 {
-    font-size: 17px;
-}
-.database p {
-    font-size: 15px;
-    margin-top: 5px;
-    line-height: 20px;
-}
-.secure {
-    position: relative;
-    padding: 14px;
-    width: 330px;
-    height: 173px;
-    display: inline-block;
-    top: -173px;
-    left: 340px;
-    background-color: #f2f2f2;
-}
-.secure h3 {
-    font-size: 17px;
-}
-.secure p {
-    font-size: 15px;
-    margin-top: 5px;
-    line-height: 20px;
-}
-.free {
-    position: relative;
-    padding: 14px;
-    width: 310px;
-    height: 173px;
-    display: inline-block;
-    background-color: #f2f2f2;
-    left: 357px;
-    top: -173px;
-}
-.free h3 {
-    font-size: 17px;
-}
-
-.free p {
-    font-size: 15px;
-    margin-top: 5px;
-    line-height: 20px ;
-}
-footer {
-    position: relative;
-    background-color: #5c5c5c;
-    position: relative;
-    height: 67px;
-    padding: 15px 0 0 20px;
-}
-footer p {
-    width: 1000px;
-    font-size: 15px;
-    text-align: right;
-    margin-left: -10px;
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: #5c5c5c;
-    color: white;
-    height: 30px;
+    border-left: 18px solid #161616;
+    margin-bottom: 12px;
 }
