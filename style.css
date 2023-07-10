@@ -1,118 +1,20 @@
-body{
-    margin: 0;
-    background-color: aliceblue;
+body {
+    padding:  20px ;
+    background-color: rgb(255, 255, 255);
 }
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-header{
-    padding: 20px 0;
-    background-color: cadetblue;
-    display: flex;
-}
-.p{
-    padding: 0 10px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-.img-container img{
-    background-color: aliceblue;
-    padding: 4px;
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
-.title-container{
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.title-container h1, .title .img-container h2{
-    color: aliceblue;
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.title-container h2{
-    font-size: 18px;
-    color:cadetblue;
-    margin-top: 10px;
-}
-.img .avatar{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 100px;
-}
-.container{
-    padding: 20px;
-    background-color: bisque;
-    display: flex;
-}
-.sider, .content{
-    background-color: aliceblue;
-    padding: 20px;
+.skeleton {
+    background-color: rgb(211, 211, 211);
+    height: 40px;
     width: 100%;
+    border-radius: 5px;
 }
-.sider{
-    width: calc(40% - 20px);
-    margin-right: 20px;
+.item {
+    margin-top: 50px;
 }
-.content{
-    flex-grow: 1;
+.img {
+    height: 200px;
 }
-.tag-fill{
-    background-color: aquamarine;
-    padding: 8px 20px;
-    color: aliceblue;
-    font-size: 18px;
-    display: inline-block;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
-.tag-content{
-    padding-left: 20px;
-    margin-top: 16px;
-    margin-bottom: 24px;
-}
-.tag-content ul{
-    margin: 0;
-    padding: 0;
-}
-.tag-content ul li{
-    list-style-type: none;
-    padding: 8px 0;
-}
-.progress-container{
-    width: 80%;
-}
-.progress-title{
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-}
-.progress-wrap{
-    width: 100%;
-    height: 10px;
-    background-color: aliceblue;
-    margin-top: 8px;
-    margin-bottom: 16px;
-}
-.progress{
-    width: 50%;
-    height: 10px;
-    background-color: aqua;
-}
-.tag{
-    font-size: 18px;
-    color: #212121;
-    padding: 10px 20px;
-    border-left: 18px solid #161616;
-    margin-bottom: 12px;
+.title {
+    background-color: rgb(136, 75, 137);
+    height: 45px;
 }
