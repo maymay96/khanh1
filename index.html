@@ -1,59 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Responsive Layout</title>
+  <title>Employee Salary Calculator</title>
+  <script src="../bai1/index.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-2 col-lg-2 col-xl-4 d-none d-md-block">
-        <div class="skeleton"
-             style="background-color: cornflowerblue; height: 50px;"
-        ></div>
-        </div>
-        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-8">
-        <div class="skeleton" 
-             style="background-color: darkcyan; height: 50px;">
-        </div>
-        </div>
-    </div>
-    <div class="row mb-4 content">
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 item">
-                <div class="img skeleton mt-4"></div>
-                <div class="title skeleton mt-4"></div>
-                <div class="description skeleton mt-4"></div>
-                <div class="note skeleton mt-4"></div>
-                <div class="price skeleton mt-4"></div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 item">
-                <div class="img skeleton mt-4"></div>
-                <div class="title skeleton mt-4"></div>
-                <div class="description skeleton mt-4"></div>
-                <div class="note skeleton mt-4"></div>
-                <div class="price skeleton mt-4"></div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 item">
-                <div class="img skeleton mt-4"></div>
-                <div class="title skeleton mt-4"></div>
-                <div class="description skeleton mt-4"></div>
-                <div class="note skeleton mt-4"></div>
-                <div class="price skeleton mt-4"></div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 item">
-                <div class="img skeleton mt-4"></div>
-                <div class="title skeleton mt-4"></div>
-                <div class="description skeleton mt-4"></div>
-                <div class="note skeleton mt-4"></div>
-                <div class="price skeleton mt-4"></div>
-            </div>
-    </div>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+<h1>Employee Salary Calculator</h1>
+
+<label for="working-days">Number of Working Days:</label>
+<input type="number" id="working-days">
+
+<br><br>
+
+<label for="daily-salary">Salary per Day:</label>
+<input type="number" step=".01" id="daily-salary">
+
+<br><br>
+
+<button onclick="calculateSalary()">Calculate Salary</button>
+
+<div id="salary-result"></div>
+
 </body>
-</html>
